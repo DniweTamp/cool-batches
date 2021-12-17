@@ -15,9 +15,17 @@ paths.bat - set up paths for programs
 
 scale.bat - automatically scale image to 128x128, 256x256, 512x512 and 1024x1024 variants (keeping aspect ratio)
 
+sscale.bat - automatically scale image to ridiculously small sizes (8x8 - 32x32)
+
 png.bat - convert image to png with noesis
 
 pngd.bat - convert image to png with noesis (and delete the original)
+
+resavepng.bat - resave png with noesis
+
+rgb.bat - assume rgb color profile (makes image darker)
+
+srgb.bat - assume srgb color profile (makes image brighter)
 
 tga.bat - convert image to tga with noesis
 
