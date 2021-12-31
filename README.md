@@ -23,9 +23,23 @@ pngd.bat - convert image to png with noesis (and delete the original)
 
 resavepng.bat - resave png with noesis
 
+extract alpha.bat - extract alpha from image to a separate grayscale image
+
+combine alpha.bat - add alpha to some image from a separate grayscale image
+
+extract all channels.bat - separate RGBA channels to different grayscale images
+
+combine channels.bat - combine multiple grayscale images to a single RGB(A) image
+
+edit gamma.bat - adjust image's gamma by some amount
+
 rgb.bat - assume rgb color profile (makes image darker)
 
 srgb.bat - assume srgb color profile (makes image brighter)
+
+Smash Texture Adjustment.bat - adjust image's colors to look better in SSBU (for mods)
+
+Smash Texture Adjustment - Revert.bat - adjust SSBU textures colors to be more colorful (will look better in, say, P5R)
 
 tga.bat - convert image to tga with noesis
 
