@@ -37,9 +37,9 @@ rgb.bat - assume rgb color profile (makes image darker)
 
 srgb.bat - assume srgb color profile (makes image brighter)
 
-Smash Texture Adjustment.bat - adjust image's colors to look better in SSBU (for mods)
+SSBU_Tex.bat - adjust image's colors to look better in SSBU (for mods)
 
-Smash Texture Adjustment - Revert.bat - adjust SSBU textures colors to be more colorful (will look better in, say, P5R)
+SSBU_Untex.bat - Revert.bat - adjust SSBU textures colors to be more colorful (will look better in, say, P5R)
 
 tga.bat - convert image to tga with noesis
 
