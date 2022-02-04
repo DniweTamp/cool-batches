@@ -37,9 +37,15 @@ rgb.bat - assume rgb color profile (makes image darker)
 
 srgb.bat - assume srgb color profile (makes image brighter)
 
+rbswap.bat - swap red and blue channels on an image (RGBA to BGRA). useful for making compressed tmx for p5, as it uses bgra
+
 SSBU_Tex.bat - adjust image's colors to look better in SSBU (for mods)
 
 SSBU_Untex.bat - Revert.bat - adjust SSBU textures colors to be more colorful (will look better in, say, P5R)
+
+P5P5S_sh.bat - convert P5 shadow map texture to P5S shadow map texture
+
+P5SP5_sh.bat - convert P5S shadow map texture to P5 shadow map texture
 
 tga.bat - convert image to tga with noesis
 
