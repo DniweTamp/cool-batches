@@ -2,8 +2,7 @@
 The batches I use for texture conversion (mainly dds)
 
 ## Pre-reqs
-You need ImageMagick installed for most of these, with old tools enabled (like "convert" command), it needs to be in your Windows PATH: https://imagemagick.org/script/download.php#windows
-
+* You need ImageMagick installed for most of these, with old tools enabled (like "convert" command), it needs to be in your Windows PATH: https://imagemagick.org/script/download.php#windows
 * Noesis: https://richwhitehouse.com/index.php?content=inc_projects.php&showproject=91
 * old NVTT: https://developer.nvidia.com/gameworksdownload (GPU Accelerated Texture Tools)
 * new NVTT: https://developer.nvidia.com/nvidia-texture-tools-exporter (Standalone)
