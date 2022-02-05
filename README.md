@@ -1,5 +1,5 @@
 # cool-batches
-The batches I use for texture conversion (mainly dds)
+The batches I use for file conversion (mainly dds)
 
 ## Pre-reqs
 * You need ImageMagick installed for most of these, with old tools enabled (like "convert" command), it needs to be in your Windows PATH: https://imagemagick.org/script/download.php#windows
