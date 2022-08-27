@@ -30,6 +30,7 @@ The batches I use for file conversion (mainly dds)
 * SSBU_Untex.bat - Revert.bat - adjust SSBU textures colors to be more colorful (will look better in, say, P5R)
 * P5P5S_sh.bat - convert P5 shadow map texture to P5S shadow map texture
 * P5SP5_sh.bat - convert P5S shadow map texture to P5 shadow map texture
+* SH2_msk_to_P5.bat - convert SH2 msk texture to P5 shadow map and specular textures
 ### Texture conversion
 * tga.bat - convert image to tga with noesis
 * tgad.bat - convert image to tga with noesis (and delete the original)
