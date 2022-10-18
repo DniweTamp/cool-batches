@@ -37,27 +37,22 @@ The batches I use for file conversion (mainly dds)
 ### Texture conversion
 * tga.bat - convert image to tga with noesis
 * tgad.bat - convert image to tga with noesis (and delete the original)
-
 * bdds.bat - new->old nvtt (auto bc1/bc3 based on alpha)
 * bddsm.bat - new->old nvtt (auto bc1/bc3 based on alpha, no mipmaps)
 * bdds1.bat - new->old nvtt (bc1)
 * bdds1m.bat - new->old nvtt (bc1, no mipmaps)
 * bddsu.bat - new->old nvtt (uncompressed)
 * bddsum.bat - new->old nvtt (uncompressed, no mipmaps)
-
 * ndds.bat - new nvtt (auto bc1/bc3 based on alpha)
 * nddsm.bat - new nvtt (auto bc1/bc3 based on alpha, no mipmaps)
 * ndds1.bat - new nvtt (bc1)
 * ndds1m.bat - new nvtt (bc1, no mipmaps)
 * ndds7.bat - new nvtt (bc7, normal quality compression)
 * ndds7m.bat - new nvtt (bc7, normal quality compression, no mipmaps)
-
 * crunch.bat - crunch dds (auto bc1/bc3 based on alpha)
 * crunch1.bat - crunch dds (bc1)
 * crunchm.bat - crunch dds (auto bc1/bc3 based on alpha, no mipmaps)
-
 * texconv.bat - texconv dds (auto bc1/bc3 based on alpha)
 * texconv1.bat - texconv dds (bc1)
 * texconv7.bat - texconv dds (bc7)
 * texconvm.bat - texconv dds (auto bc1/bc3 based on alpha, no mipmaps)
-
