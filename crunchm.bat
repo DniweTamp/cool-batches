@@ -5,15 +5,25 @@ title Any texture to DDS Conversion
 :: for checking image alpha
 
 ::paths
-set crunch=E:\s\GitHub\crunch\bin\crunch_x64.exe
-set noesis=E:\s\Noesis\Noesis.exe
+call paths.bat
+set "fileCount=0"
+for %%A in (%*) do set /a "fileCount+=1"
 
 setlocal EnableDelayedExpansion
 FOR %%a IN (%*) DO (
-    echo Converting %%~na%%~xa
-    identify -format %%[opaque] %%a > tmpFile
-    set /p alpha= < tmpFile
-    del tmpFile
+    set /a "currentFile+=1"
+    
+    :: Calculate the progress
+    set /a "progress=currentFile*20/fileCount"
+    
+    :: Create the progress bar
+    set "progressBar="
+    for /L %%B in (1,1,!progress!) do set "progressBar=!progressBar!#"
+    for /L %%B in (!progress!,1,19) do set "progressBar=!progressBar!-"
+    
+    echo File !currentFile!/!fileCount! [!progressBar!]: %%~nA%%~xA
+
+	for /f %%i in ('identify -format %%[opaque] %%a') do set alpha=%%i
     if "!alpha!"=="False" set bc=-DXT5
     if "!alpha!"=="True" set bc=-DXT1
     "%crunch%" -quiet -clampScale 2048 2048 !bc! -fileformat dds -dxtQuality uber -mipMode None -outsamedir -file %%a

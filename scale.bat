@@ -1,9 +1,22 @@
 @echo off
 title Scale PNG
 call paths.bat
+set "fileCount=0"
+for %%A in (%*) do set /a "fileCount+=1"
 
+setlocal EnableDelayedExpansion
 FOR %%a IN (%*) DO (
-    echo Scaling %%~na%%~xa
+    set /a "currentFile+=1"
+    
+    :: Calculate the progress
+    set /a "progress=currentFile*20/fileCount"
+    
+    :: Create the progress bar
+    set "progressBar="
+    for /L %%B in (1,1,!progress!) do set "progressBar=!progressBar!#"
+    for /L %%B in (!progress!,1,19) do set "progressBar=!progressBar!-"
+    
+    echo File !currentFile!/!fileCount! [!progressBar!]: %%~nA%%~xA
     if not exist "%%~pa@128" mkdir "%%~pa@128"
     if not exist "%%~pa@256" mkdir "%%~pa@256"
     if not exist "%%~pa@512" mkdir "%%~pa@512"
