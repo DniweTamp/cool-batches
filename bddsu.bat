@@ -26,6 +26,7 @@ FOR %%a IN (%*) DO (
     "%noesis%" ?cmode %%a "%%~pa%%~na.tga"
     "%nvtt%" -rgb "%%~pa%%~na.tga"
     del "%%~pa%%~na.tga"
+    cls
 )
 
 ::pause

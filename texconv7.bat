@@ -24,6 +24,7 @@ FOR %%a IN (%*) DO (
 	"%texconv%" -f BC7_UNORM -pow2 -nologo -timing -y "%%~da%%~pa%%~na_temp.tga"
 	ren "%%~da%%~pa%%~na_temp.dds" "%%~na.dds"
 	del "%%~da%%~pa%%~na_temp.tga"
+    cls
 )
 
 ::pause

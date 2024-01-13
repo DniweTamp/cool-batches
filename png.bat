@@ -18,6 +18,7 @@ FOR %%a IN (%*) DO (
     
     echo File !currentFile!/!fileCount! [!progressBar!]: %%~na%%~xa
     "%noesis%" ?cmode %%a "%%~pa%%~na.png"
+    cls
 )
 
 ::pause

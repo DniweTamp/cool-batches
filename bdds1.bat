@@ -25,6 +25,7 @@ FOR %%a IN (%*) DO (
 
     %NEWNVTT% %%a -f 18 -q 3 -o "%%~da%%~pa%%~na.dds"
     "%nvtt%" -bc1 "%%~da%%~pa%%~na.dds"
+    cls
 )
 
 ::pause

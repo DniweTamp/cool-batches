@@ -25,6 +25,7 @@ FOR %%a IN (%*) DO (
     convert %%a -resize 256x256 "%%~pa@256\%%~na.png"
     convert %%a -resize 512x512 "%%~pa@512\%%~na.png"
     convert %%a -resize 1024x1024 "%%~pa@1024\%%~na.png"
+    cls
 )
 
 ::pause

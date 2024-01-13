@@ -21,4 +21,5 @@ FOR %%a IN (%*) DO (
 	del "%%~da%%~pa%%~na.png"
 	"%noesis%" ?cmode "%%~da%%~pa%%~na.tga" "%%~da%%~pa%%~na.png"
 	del "%%~da%%~pa%%~na.tga"
+    cls
 )

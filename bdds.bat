@@ -30,6 +30,7 @@ FOR %%a IN (%*) DO (
     if "!alpha!"=="False" set bc=-bc3
     if "!alpha!"=="True" set bc=-bc1  
     "%nvtt%" !bc! "%%~da%%~pa%%~na.dds"
+    cls
 )
 
 ::pause

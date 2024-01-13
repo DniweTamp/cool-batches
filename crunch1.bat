@@ -21,6 +21,7 @@ FOR %%a IN (%*) DO (
     echo File !currentFile!/!fileCount! [!progressBar!]: %%~na%%~xa
 
     "%crunch%" -quiet -clampScale 2048 2048 -DXT1 -fileformat dds -dxtQuality uber -outsamedir -file %%a
+    cls
 )
 
 ::pause

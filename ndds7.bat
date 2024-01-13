@@ -20,6 +20,7 @@ FOR %%a IN (%*) DO (
     echo File !currentFile!/!fileCount! [!progressBar!]: %%~na%%~xa
 
     %NEWNVTT% %%a -f 23 -q 1 -o "%%~da%%~pa%%~na.dds"
+    cls
 )
 
 ::pause

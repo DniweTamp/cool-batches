@@ -27,6 +27,7 @@ FOR %%a IN (%*) DO (
     if "!alpha!"=="False" set bc=-18
     if "!alpha!"=="True" set bc=15
     %NEWNVTT% %%a -f !bc! -q 3 --no-mips -o "%%~da%%~pa%%~na.dds"
+    cls
 )
 
 ::pause
