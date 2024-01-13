@@ -21,7 +21,7 @@ FOR %%a IN (%*) DO (
     for /L %%B in (1,1,!progress!) do set "progressBar=!progressBar!#"
     for /L %%B in (!progress!,1,19) do set "progressBar=!progressBar!-"
     
-    echo File !currentFile!/!fileCount! [!progressBar!]: %%~nA%%~xA
+    echo File !currentFile!/!fileCount! [!progressBar!]: %%~na%%~xa
 
     %NEWNVTT% %%a -f 18 -q 3 -o "%%~da%%~pa%%~na.dds"
 	for /f %%i in ('identify -format %%[opaque] %%a') do set alpha=%%i

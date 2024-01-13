@@ -16,7 +16,7 @@ FOR %%a IN (%*) DO (
     for /L %%B in (1,1,!progress!) do set "progressBar=!progressBar!#"
     for /L %%B in (!progress!,1,19) do set "progressBar=!progressBar!-"
     
-    echo File !currentFile!/!fileCount! [!progressBar!]: %%~nA%%~xA
+    echo File !currentFile!/!fileCount! [!progressBar!]: %%~na%%~xa
     "%noesis%" ?cmode %%a "%%~pa%%~na.tga"
     del %%a
 )

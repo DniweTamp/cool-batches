@@ -5,6 +5,7 @@ title Any texture to DDS Conversion
 :: for checking image alpha
 
 ::paths
+call paths.bat
 set "fileCount=0"
 for %%A in (%*) do set /a "fileCount+=1"
 
@@ -20,7 +21,7 @@ FOR %%a IN (%*) DO (
     for /L %%B in (1,1,!progress!) do set "progressBar=!progressBar!#"
     for /L %%B in (!progress!,1,19) do set "progressBar=!progressBar!-"
     
-    echo File !currentFile!/!fileCount! [!progressBar!]: %%~nA%%~xA
+    echo File !currentFile!/!fileCount! [!progressBar!]: %%~na%%~xa
 
     for /f %%i in ('identify -format %%[opaque] %%a') do set alpha=%%i
     if "!alpha!"=="False" set bc=-18

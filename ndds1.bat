@@ -2,6 +2,7 @@
 title Any texture to DDS Conversion
 
 ::paths
+call paths.bat
 set "fileCount=0"
 for %%A in (%*) do set /a "fileCount+=1"
 
@@ -17,7 +18,7 @@ FOR %%a IN (%*) DO (
     for /L %%B in (1,1,!progress!) do set "progressBar=!progressBar!#"
     for /L %%B in (!progress!,1,19) do set "progressBar=!progressBar!-"
     
-    echo File !currentFile!/!fileCount! [!progressBar!]: %%~nA%%~xA
+    echo File !currentFile!/!fileCount! [!progressBar!]: %%~na%%~xa
 
     %NEWNVTT% %%a -f 15 -q 3 -o "%%~da%%~pa%%~na.dds"
 )
