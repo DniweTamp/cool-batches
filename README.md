@@ -34,6 +34,7 @@ The batches I use for file conversion (mainly dds)
 * P5P5S_sh.bat - convert P5 shadow map texture to P5S shadow map texture
 * P5SP5_sh.bat - convert P5S shadow map texture to P5 shadow map texture
 * SH2_msk_to_P5.bat - convert SH2 msk texture to P5 shadow map and specular textures
+* FlattenP3RETex.bat - Create a decent looking fullbright version of P3RE texture out of Col, MkA, MkB
 ### Texture conversion
 * tga.bat - convert image to tga with noesis
 * tgad.bat - convert image to tga with noesis (and delete the original)
